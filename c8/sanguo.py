@@ -37,13 +37,14 @@ for sentence_index in range(len(sentences)):
 # print(sentences[9])
 # print(next_chars[9])
 
-model = models.Sequential()
-model.add(layers.LSTM(32, input_shape=(maxlen, len(chars),)))
-model.add(layers.Dense(32, activation=activations.relu))
-model.add(layers.Dense(len(chars), activation=activations.softmax))
-model.compile(loss=losses.categorical_crossentropy)
-model.fit(train_data, train_label, epochs=6, batch_size=20, validation_split=0.2)
-model.save("san.h5")
+# compile the model
+# model = models.Sequential()
+# model.add(layers.LSTM(32, input_shape=(maxlen, len(chars),)))
+# model.add(layers.Dense(32, activation=activations.relu))
+# model.add(layers.Dense(len(chars), activation=activations.softmax))
+# model.compile(loss=losses.categorical_crossentropy)
+# model.fit(train_data, train_label, epochs=6, batch_size=20, validation_split=0.2)
+# model.save("san.h5")
 
 
 
